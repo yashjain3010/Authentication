@@ -1,0 +1,191 @@
+/* Ensures the container does not allow overflow of content */
+.container {
+    overflow: hidden;
+}
+
+/* Styles for the left and right sections, taking up half width each, with full viewport height */
+.left-section-1, .right-section-1 {
+    width: 50%;
+    float: left;
+    height: 100vh;
+}
+
+/* Styles the image to cover its container while maintaining aspect ratio */
+.image-medicine {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center-aligns the logo with padding */
+.logo-1 {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Styles the card element with padding, rounded corners, and centered alignment */
+.card-1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3.5rem;
+    border-radius: 1rem;
+}
+
+/* Styling for secondary heading with spacing below */
+.heading2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Styles for paragraph text with small font and reduced weight */
+.para-1 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
+/* Flex layout for form group, with column direction and small gap between items */
+.form-group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Label styling with bold font, color, and margin spacing */
+.labels {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.margin{
+    margin-top: 2rem;
+}
+
+/* Input styling for width, padding, border, rounded corners, and smooth transition on focus */
+.inputs {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 1rem;
+}
+
+/* Adds top margin to the input container */
+.input1 {
+    margin-top: 0.5rem;
+}
+
+/* Input focus styling with a specific border color */
+.inputs:focus {
+    border-color: #926B6B;
+}
+
+/* Styling for login link, center-aligned with specific color and margin */
+.login-link {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #334EAC;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Button styling for signup with padding, rounded corners, font settings, background color, and hover effect */
+.SigninButton {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #926B6B;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 2rem;
+}
+
+/* Styling for the checkbox container with font size and spacing */
+.checkbox-para {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Checkbox label styling with gap and cursor style */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+/* Text styling for label text within the checkbox area */
+.label-text {
+    color: #333333;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Container styling for password input field and eye icon */
+.password-container {
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+/* Right padding added to input field to avoid overlapping with the icon */
+.inputs {
+    padding-right: 2.5rem;
+}
+
+/* Eye icon container styling for toggling password visibility */
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Eye icon styling */
+.toggle-password svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional hover effect for the password toggle icon */
+.toggle-password:hover {
+    color: #333;
+}
+
+.forgot-button{
+    text-align: right;
+    margin-top: -0.4rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #334EAC;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+    
+

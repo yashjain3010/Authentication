@@ -1,0 +1,106 @@
+.display-1 {
+  display: flex; /* Arrange items in a row */
+  align-items: center; /* Vertically align content */
+  justify-content: space-between; /* Separate product info and MRP */
+  margin-bottom: 10px; /* Space between rows if multiple products */
+  width: 100%; /* Ensures the container stretches across the parent */
+}
+
+.product-details {
+  flex: 0 0 650px; /* Fixed width for the product details container */
+  display: flex; /* Arrange name and quantity controls in a row */
+  align-items: center; /* Align content vertically */
+  justify-content: space-between; /* Space out product name and quantity */
+  padding: 10px;
+  border: 1px solid #ccc; /* Add border for the box */
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Light background */
+  box-sizing: border-box; /* Ensures padding and borders are included in width */
+}
+
+.product-details h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Adjust font size for product name */
+  flex: 1; /* Take up space on the left */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Ensure overflow is hidden if text is too long */
+  text-overflow: ellipsis; /* Display '...' if the text overflows */
+}
+
+.quantity-controls {
+  display: flex; /* Arrange buttons and input in a row */
+  align-items: center; /* Align controls vertically */
+  gap: 5px; /* Add spacing between controls */
+}
+
+.quantity-controls button {
+  padding: 5px 10px; /* Add padding for buttons */
+  background-color: #ff6f61; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Optional: Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 14px; /* Adjust font size */
+}
+
+.quantity-controls button:disabled {
+  background-color: #ccc; /* Color for disabled button */
+  cursor: not-allowed; /* Show not-allowed cursor */
+}
+
+.quantity-controls input {
+  width: 50px; /* Adjust width for quantity input */
+  text-align: center; /* Align text in center */
+  padding: 5px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.mrp {
+  font-size: 18px; /* Adjust font size for MRP */
+  font-weight: bold; /* Make MRP bold */
+  margin: 0 0 0 15px; /* Add space to the left of MRP */
+  color: #333; /* Optional: MRP text color */
+}
+
+.stock {
+  font-size: 14px; /* Adjust font size for stock */
+  margin-bottom: 10px;
+}
+
+.quantity-controls {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between elements */
+}
+
+.quantity-controls button {
+  padding: 8px 12px; /* Adjust button size */
+  background-color: #ff6f61; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background-color: #e65c50; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.quantity-controls button:disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed; /* Not-allowed cursor */
+}
+
+.quantity-controls input {
+  width: 50px; /* Adjust width for quantity input */
+  text-align: center; /* Center text */
+  padding: 5px;
+  border: 1px solid #ccc; /* Add a light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size */
+}

@@ -1,0 +1,86 @@
+/* Order Summary container */
+.order-summary {
+  flex: 1;
+  width: 350px;
+  height: fit-content;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-left: 40px;
+}
+
+/* Headings */
+.order-summary h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.order-summary h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Customer Details */
+.customer-details p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.customer-details strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Product List */
+.product-list {
+  margin-top: 10px;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  font-size: 0.9em;
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Total MRP */
+.total-mrp {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+/* Additional Note Styling */
+.additional-note {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.additional-note textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 0.9em;
+  resize: none;
+}
+
+.texting{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}

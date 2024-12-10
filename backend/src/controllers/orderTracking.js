@@ -1,10 +1,9 @@
+// Import required modules
 const {fetchOrderFulfillmentList,fetchAllStatusList,fetchTrackOrderofCustomer} = require('../utils/fetchData');
 
 const orderFulfillmentList = async (req, res) => {
   try {
     const orderFulfillmentData = await fetchOrderFulfillmentList();
-    
-    // Log the number of items retrieved
     console.log(`Retrieved ${orderFulfillmentData.length} order fulfillment items`);
     
     res.json(orderFulfillmentData);
@@ -20,8 +19,6 @@ const orderFulfillmentList = async (req, res) => {
 const orderStatusList = async (req, res) => {
     try {
         const orderStatusListData = await fetchAllStatusList();
-        
-        // Log the number of items retrieved
         console.log(`Retrieved ${orderStatusListData.length} order status list items`);
         
         res.json(orderStatusListData);
@@ -37,7 +34,7 @@ const orderStatusList = async (req, res) => {
 const trackOrderList = async (req, res) => {
   try {
     const trackOrderListData = await fetchTrackOrderofCustomer();
-    console.log(trackOrderListData); // Log the actual data
+    console.log(trackOrderListData);
     res.json(trackOrderListData);
   } catch (error) {
     console.error("Error fetching track order list", error);
